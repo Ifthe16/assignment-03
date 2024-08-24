@@ -42,13 +42,19 @@
         <nav class="pb-9">
             <div class="flex justify-between items-center px-5 py-10">
                 <div class="">
+                    <a class="text-3xl font-extrabold text-[#212121] items-center text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ABEF5F" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-14 text-[#F2F2F2] inline -rotate-45">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>Rinterio</a>
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-white rounded-full p-3">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-white rounded-full p-3 ml-24">
                             <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg> -->
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg> -->
                             <!-- <div class="bg-stone-600 rounded-full p-1"> -->
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
@@ -66,12 +72,6 @@
                             <li><a class="text-[#737373]">Contact Us</a></li>
                         </ul>
                     </div>
-                    <a class="text-3xl font-extrabold text-[#212121] items-center text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ABEF5F" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-14 text-[#F2F2F2] inline -rotate-45">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>Rinterio</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -111,20 +111,62 @@
                 </div>
                 <!-- text -->
                 <div class="text-center max-w-3xl">
-                    <h1 class="text-3xl lg:text-5xl font-extrabold text-[#212121] lg:pb-6">A barn house of this design has a striking appearance
+                    <h1 class="text-3xl lg:text-5xl font-extrabold text-[#212121] lg:pb-6">A barn house of this design
+                        has a striking appearance
                     </h1>
-                    <p class="py-5 lg:py-8 text-[#494949] font-medium">The barn house combines rustic warmth with modern style, showcasing
+                    <p class="py-5 lg:py-8 text-[#494949] font-medium">The barn house combines rustic warmth with modern
+                        style, showcasing
                         weathered wood, contemporary metal accents, and expansive windows that invite abundant natural
                         light into the space.</p>
-                    <button class="btn bg-[rgba(171,239,95,0.5)] text-[#212121] rounded-3xl px-20 lg:px-6 font-bold text-xl">View Details <i class="fa-solid fa-circle-arrow-right -rotate-45 text-2xl text-[#ABEF5F]"></i>
+                    <button
+                        class="btn bg-[rgba(171,239,95,0.5)] text-[#212121] rounded-3xl px-20 lg:px-6 font-bold text-xl">View
+                        Details <i class="fa-solid fa-circle-arrow-right -rotate-45 text-2xl text-[#ABEF5F]"></i>
                     </button>
                 </div>
             </div>
         </div>
     </header>
     <!-- main section -->
-    <main>
+    <main class="md:container mx-auto">
+        <!-- about section -->
+        <section class="">
+            <div class="hero min-h-screen bg-[#F4F4F4] text-center">
+                <div class="hero-content flex-col-reverse lg:flex-row-reverse p-5 lg:p-20">
+                    <img src="assets/Rectangle.png" class="max-w-sm lg:max-w-lg rounded-2xl"/>
+                    <div class="space-y-6 relative">
+                       <div class="hidden lg:inline">
+                        <img src="assets/Vector.png" alt="" class="absolute -top-8 -left-14">
+                       </div>
+                        <button class="btn px-4 py-2 rounded-3xl font-bold bg-white text-center text-[#494949]"><i class="fa-solid fa-arrow-right"></i>About US</button>
+                        <h1 class="text-3xl lg:text-5xl font-bold text-[#212121]">We design thoughtful, liveable spaces</h1>
+                        <p class="py-6 text-[#494949] font-medium">We’re dedicated to creating spaces that truly
+                            resonate with you. Our designs go
+                            beyond aesthetics—they’re about crafting environments where you feel most at home. By
+                            thoughtfully considering every detail, we ensure that your space is not only beautiful but
+                            also perfectly suited to your needs and lifestyle.</p>
+                        <div class=" flex bg-white p-6 space-x-6 mb-6 rounded-2xl items-center">
+                            <img src="assets/commercial.png" alt="" class="max-w-sm">
+                            <div class="space-y-2 max-w-sm">
+                                <h3 class="text-[#494949] text-xl font-extrabold">Commercial</h3>
+                                <p class="text-[#737373] font-medium">We design commercial spaces that are functional and stylish, creating environments that reflect your brand and enhance the customer experience. </p>
+                            </div>
+                        </div>
+                        <div class="flex bg-white p-6 space-x-3 rounded-2xl space-x-6 items-center">
+                            <img src="assets/residential.png" alt="" class="max-w-sm">
+                            <div class="space-y-2 max-w-sm">
+                                <h3 class="text-[#494949] text-xl font-extrabold">Residential</h3>
+                                <p class="text-[#737373] font-medium">Our residential designs create homes that are
+                                    both beautiful and functional, tailored to reflect your lifestyle and provide a
+                                    warm, inviting atmosphere.</p>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
     </main>
     <!-- footer section -->
     <footer>
