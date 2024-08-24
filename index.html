@@ -50,12 +50,6 @@
                         </svg>Rinterio</a>
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-white rounded-full p-3 ml-24">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg> -->
-                            <!-- <div class="bg-stone-600 rounded-full p-1"> -->
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -97,7 +91,8 @@
                                 d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
                     </a>
-                    <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold text-[#1C1C1C] text-xl px-5 border-none">Book
+                    <a href="#ds-1"
+                        class="btn bg-[#ABEF5F] rounded-3xl font-extrabold text-[#1C1C1C] text-xl px-5 border-none">Book
                         Consult<i class="fa-solid fa-circle-arrow-right -rotate-45 text-2xl"></i></a>
                 </div>
             </div>
@@ -120,8 +115,18 @@
                         light into the space.</p>
                     <button
                         class="btn bg-[rgba(171,239,95,0.5)] text-[#212121] rounded-3xl px-20 lg:px-6 font-bold text-xl">View
-                        Details <i class="fa-solid fa-circle-arrow-right -rotate-45 text-2xl text-[#ABEF5F]"></i>
+                        Details <i class="fa-solid fa-circle-arrow-right -rotate-45 text-2xl text-[#ABEF5F]"
+                            onclick="View()"></i>
                     </button>
+                    <!-- script tag-->
+                    <script>
+                        function View() {
+                            alert("Scroll down! Details below")
+                        }
+                    </script>
+                    <script>
+                        alert("Welcome to Rinterio website")
+                    </script>
                 </div>
             </div>
         </div>
@@ -330,61 +335,76 @@
                 </div>
             </div>
         </section>
-         <!-- faq section -->
-         <section class="mb-5">
+        <!-- faq section -->
+        <section class="mb-5">
             <div class="bg-[#F4F4F4] min-h-screen py-20">
                 <h1 class="text-3xl lg:text-5xl font-bold text-[#212121] text-center mb-7">Frequently Asked <span
                         class="text-lime-400">Questions</span></h1>
                 <!-- faq -->
                 <div class="hero">
                     <div class="hero-content flex-col lg:flex-row">
-                      <img
-                        src="assets/faq.png"
-                        class="w-full rounded-lg" />
-                      <div class="space-y-5">
-                        <div class="collapse collapse-arrow border border-blue-100">
-                            <input type="radio" name="my-accordion-2" checked="checked" />
-                            <div class="collapse-title text-xl font-medium text-[#212121]">What types of projects do you specialize in?</div>
-                            <div class="collapse-content">
-                              <p>We specialize in both commercial and residential building design. Whether you’re looking to design a modern office space, a retail store, or a custom home, we have the expertise to bring your vision to life.</p>
+                        <img src="assets/faq.png" class="w-full rounded-lg" />
+                        <div class="space-y-5">
+                            <div class="collapse collapse-arrow border border-blue-100">
+                                <input type="radio" name="my-accordion-2" checked="checked" />
+                                <div class="collapse-title text-xl font-medium text-[#212121]">What types of projects do
+                                    you specialize in?</div>
+                                <div class="collapse-content">
+                                    <p>We specialize in both commercial and residential building design. Whether you’re
+                                        looking to design a modern office space, a retail store, or a custom home, we
+                                        have the expertise to bring your vision to life.</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="collapse collapse-arrow border border-blue-100">
-                            <input type="radio" name="my-accordion-2" />
-                            <div class="collapse-title text-xl font-medium text-[#212121]">What is your design process?</div>
-                            <div class="collapse-content">
-                              <p>Our design process includes several key steps: Concept, Design, Supervision, and Budget Planning. We start by understanding your needs and developing a concept, then move into detailed design, overseeing the construction, and ensuring everything stays within your budget.</p>
+                            <div class="collapse collapse-arrow border border-blue-100">
+                                <input type="radio" name="my-accordion-2" />
+                                <div class="collapse-title text-xl font-medium text-[#212121]">What is your design
+                                    process?</div>
+                                <div class="collapse-content">
+                                    <p>Our design process includes several key steps: Concept, Design, Supervision, and
+                                        Budget Planning. We start by understanding your needs and developing a concept,
+                                        then move into detailed design, overseeing the construction, and ensuring
+                                        everything stays within your budget.</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="collapse collapse-arrow border border-blue-100">
-                            <input type="radio" name="my-accordion-2" />
-                            <div class="collapse-title text-xl font-medium text-[#212121]"> How long does a typical project take?</div>
-                            <div class="collapse-content">
-                              <p>The timeline for a project varies depending on its complexity and scope. Generally, residential projects take 3-6 months, while commercial projects can range from 6 months to a year. We’ll provide a more accurate timeline after the initial consultation.</p>
+                            <div class="collapse collapse-arrow border border-blue-100">
+                                <input type="radio" name="my-accordion-2" />
+                                <div class="collapse-title text-xl font-medium text-[#212121]"> How long does a typical
+                                    project take?</div>
+                                <div class="collapse-content">
+                                    <p>The timeline for a project varies depending on its complexity and scope.
+                                        Generally, residential projects take 3-6 months, while commercial projects can
+                                        range from 6 months to a year. We’ll provide a more accurate timeline after the
+                                        initial consultation.</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="collapse collapse-arrow border border-blue-100">
-                            <input type="radio" name="my-accordion-2" />
-                            <div class="collapse-title text-xl font-medium text-[#212121]">Do you offer custom design services?</div>
-                            <div class="collapse-content">
-                              <p>Yes, we pride ourselves on offering fully customized design services. Every project is tailored to meet the specific needs and preferences of our clients, ensuring a unique and personalized outcome.</p>
+                            <div class="collapse collapse-arrow border border-blue-100">
+                                <input type="radio" name="my-accordion-2" />
+                                <div class="collapse-title text-xl font-medium text-[#212121]">Do you offer custom
+                                    design services?</div>
+                                <div class="collapse-content">
+                                    <p>Yes, we pride ourselves on offering fully customized design services. Every
+                                        project is tailored to meet the specific needs and preferences of our clients,
+                                        ensuring a unique and personalized outcome.</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="collapse collapse-arrow border border-blue-100">
-                            <input type="radio" name="my-accordion-2" />
-                            <div class="collapse-title text-xl font-medium text-[#212121]">How do you ensure the project stays on budget?</div>
-                            <div class="collapse-content">
-                              <p>We provide thorough budget planning from the outset and closely monitor costs throughout the project. Our team works diligently to find cost-effective solutions without compromising on quality or design.</p>
+                            <div class="collapse collapse-arrow border border-blue-100">
+                                <input type="radio" name="my-accordion-2" />
+                                <div class="collapse-title text-xl font-medium text-[#212121]">How do you ensure the
+                                    project stays on budget?</div>
+                                <div class="collapse-content">
+                                    <p>We provide thorough budget planning from the outset and closely monitor costs
+                                        throughout the project. Our team works diligently to find cost-effective
+                                        solutions without compromising on quality or design.</p>
+                                </div>
                             </div>
-                          </div>
-                      </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
             </div>
         </section>
         <!-- discuss section -->
-        <section>
+        <section id="ds-1">
             <div class="bg-[url('/assets/bg.jpg')] bg-no-repeat bg-cover lg:py-24 py-8 px-5">
                 <!-- text container -->
                 <div class="hero">
@@ -428,28 +448,30 @@
     </main>
     <!-- footer section -->
     <footer class="footer footer-center bg-[#1C1C1C] lg:p-24 py-16 px-5 lg:px-0">
-            <aside class="space-y-4">
-                <a class="text-3xl font-extrabold items-center text-[#E9E9E9] text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ABEF5F" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-12 text-[#1C1C1C] inline -rotate-45">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>Rinterio</a>
-              <p class="font-medium text-[#737373] text-center">We create exceptional residential and commercial spaces with a focus on quality, creativity, and personalized service. Let’s build something extraordinary together.
-            </aside>
+        <aside class="space-y-4">
+            <a class="text-3xl font-extrabold items-center text-[#E9E9E9] text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#ABEF5F" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-12 text-[#1C1C1C] inline -rotate-45">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>Rinterio</a>
+            <p class="font-medium text-[#737373] text-center">We create exceptional residential and commercial spaces
+                with a focus on quality, creativity, and personalized service. Let’s build something extraordinary
+                together.
+        </aside>
         <nav class="space-y-12">
-          <div class="grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-28">
-            <a href="http://" target="_blank" class="text-[#E9E9E9]">Home</a>
-            <a href="http://" target="_blank" class="text-[#E9E9E9]">Services</a>
-            <a href="http://" target="_blank" class="text-[#E9E9E9]">Portfolio</a>
-            <a href="http://" target="_blank" class="text-[#E9E9E9]">Blogs</a>
-            <a href="http://" target="_blank" class="text-[#E9E9E9]">Contact Us</a>
-          </div>
-          <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold text-[#1C1C1C] text-xl lg:px-5 px-16 border-none">Book
-            Consult<i class="fa-solid fa-circle-arrow-right -rotate-45 text-2xl"></i></a>
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-28">
+                <a href="http://" target="_blank" class="text-[#E9E9E9]">Home</a>
+                <a href="http://" target="_blank" class="text-[#E9E9E9]">Services</a>
+                <a href="http://" target="_blank" class="text-[#E9E9E9]">Portfolio</a>
+                <a href="http://" target="_blank" class="text-[#E9E9E9]">Blogs</a>
+                <a href="http://" target="_blank" class="text-[#E9E9E9]">Contact Us</a>
+            </div>
+            <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold text-[#1C1C1C] text-xl lg:px-5 px-16 border-none">Book
+                Consult<i class="fa-solid fa-circle-arrow-right -rotate-45 text-2xl"></i></a>
         </nav>
 
-      </footer>
+    </footer>
 </body>
 
 </html>
