@@ -155,7 +155,7 @@
                                     experience. </p>
                             </div>
                         </div>
-                        <div class="flex bg-white p-6 space-x-3 rounded-2xl space-x-6 items-center">
+                        <div class="flex bg-white p-6 rounded-2xl space-x-6 items-center">
                             <img src="assets/residential.png" alt="" class="max-w-sm">
                             <div class="space-y-2 max-w-sm">
                                 <h3 class="text-[#494949] text-xl font-extrabold">Residential</h3>
@@ -330,6 +330,59 @@
                 </div>
             </div>
         </section>
+         <!-- faq section -->
+         <section class="mb-5">
+            <div class="bg-[#F4F4F4] min-h-screen py-20">
+                <h1 class="text-3xl lg:text-5xl font-bold text-[#212121] text-center mb-7">Frequently Asked <span
+                        class="text-lime-400">Questions</span></h1>
+                <!-- faq -->
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                      <img
+                        src="assets/faq.png"
+                        class="w-full rounded-lg" />
+                      <div class="space-y-5">
+                        <div class="collapse collapse-arrow border border-blue-100">
+                            <input type="radio" name="my-accordion-2" checked="checked" />
+                            <div class="collapse-title text-xl font-medium text-[#212121]">What types of projects do you specialize in?</div>
+                            <div class="collapse-content">
+                              <p>We specialize in both commercial and residential building design. Whether you’re looking to design a modern office space, a retail store, or a custom home, we have the expertise to bring your vision to life.</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-arrow border border-blue-100">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium text-[#212121]">What is your design process?</div>
+                            <div class="collapse-content">
+                              <p>Our design process includes several key steps: Concept, Design, Supervision, and Budget Planning. We start by understanding your needs and developing a concept, then move into detailed design, overseeing the construction, and ensuring everything stays within your budget.</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-arrow border border-blue-100">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium text-[#212121]"> How long does a typical project take?</div>
+                            <div class="collapse-content">
+                              <p>The timeline for a project varies depending on its complexity and scope. Generally, residential projects take 3-6 months, while commercial projects can range from 6 months to a year. We’ll provide a more accurate timeline after the initial consultation.</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-arrow border border-blue-100">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium text-[#212121]">Do you offer custom design services?</div>
+                            <div class="collapse-content">
+                              <p>Yes, we pride ourselves on offering fully customized design services. Every project is tailored to meet the specific needs and preferences of our clients, ensuring a unique and personalized outcome.</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-arrow border border-blue-100">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium text-[#212121]">How do you ensure the project stays on budget?</div>
+                            <div class="collapse-content">
+                              <p>We provide thorough budget planning from the outset and closely monitor costs throughout the project. Our team works diligently to find cost-effective solutions without compromising on quality or design.</p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+        </section>
         <!-- discuss section -->
         <section>
             <div class="bg-[url('/assets/bg.jpg')] bg-no-repeat bg-cover lg:py-24 px-5">
@@ -341,24 +394,35 @@
                                 <button
                                     class="btn px-4 py-2 rounded-3xl font-bold bg-[rgba(171,239,95,0.2)] text-center text-[#494949]"><i
                                         class="fa-solid fa-arrow-right text-lg"></i>Let’s Connect</button>
-                                <h1 class="text-3xl lg:text-5xl font-bold text-[#212121]">Let’s Discuss Next Project</h1>
-                                <p class=" font-medium text-[#494949]">Ready to bring your vision to life? We’re here to listen, collaborate, and create something extraordinary together. Whether you have a clear idea or need guidance, our team is eager to explore your next project and turn it into reality. Let’s start the conversation and design something amazing.</p>
+                                <h1 class="text-3xl lg:text-5xl font-bold text-[#212121]">Let’s Discuss Next Project
+                                </h1>
+                                <p class=" font-medium text-[#494949]">Ready to bring your vision to life? We’re here to
+                                    listen, collaborate, and create something extraordinary together. Whether you have a
+                                    clear idea or need guidance, our team is eager to explore your next project and turn
+                                    it into reality. Let’s start the conversation and design something amazing.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- form container -->
-            <div class="lg:max-w-[80%] mx-auto relative">
-            <form action="" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <input type="text" placeholder="First Name*" class="text-[#212121] lg:max-w-[473px] lg:min-h-[64px] bg-white rounded-[64px] py-5 px-5">
-                <input type="text" placeholder="Last Name*" class="text-[#212121] lg:max-w-[473px] lg:min-h-[64px] bg-white rounded-[64px] py-5 px-5">
-                <input type="text" placeholder="Phone Number*" class="text-[#212121] lg:max-w-[473px] lg:min-h-[64px] bg-white rounded-[64px] py-5 px-5">
-                <input type="text" placeholder="Email Number*" class="text-[#212121] lg:max-w-[473px] lg:min-h-[64px] bg-white rounded-[64px] py-5 px-5">
-                <textarea name="" id="" placeholder="Write your message here"  class="text-[#212121] rounded-[32px] py-5 px-5 lg:col-span-2" rows="10"></textarea>
-                <input type="submit" value="Send Mail" class="btn font-extrabold text-xl bg-[#ABEF5F] rounded-[32px] lg:col-span-2 border-none">
-                <i class="fa-solid fa-circle-arrow-right -rotate-45 text-[#1C1C1C] absolute lg:top-[486px] lg:left-[550px] top-[662px] left-[220px] text-3xl"></i>
-            </form>
-            </div>
+                <div class="lg:max-w-[80%] mx-auto relative">
+                    <form action="" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <input type="text" placeholder="First Name*"
+                            class="text-[#212121] lg:max-w-[473px] lg:min-h-[64px] bg-white rounded-[64px] py-5 px-5">
+                        <input type="text" placeholder="Last Name*"
+                            class="text-[#212121] lg:max-w-[473px] lg:min-h-[64px] bg-white rounded-[64px] py-5 px-5">
+                        <input type="text" placeholder="Phone Number*"
+                            class="text-[#212121] lg:max-w-[473px] lg:min-h-[64px] bg-white rounded-[64px] py-5 px-5">
+                        <input type="text" placeholder="Email Number*"
+                            class="text-[#212121] lg:max-w-[473px] lg:min-h-[64px] bg-white rounded-[64px] py-5 px-5">
+                        <textarea name="" id="" placeholder="Write your message here"
+                            class="text-[#212121] rounded-[32px] py-5 px-5 lg:col-span-2" rows="10"></textarea>
+                        <input type="submit" value="Send Mail"
+                            class="btn font-extrabold text-xl bg-[#ABEF5F] rounded-[32px] lg:col-span-2 border-none">
+                        <i
+                            class="fa-solid fa-circle-arrow-right -rotate-45 text-[#1C1C1C] absolute lg:top-[486px] lg:left-[550px] top-[662px] left-[220px] text-3xl"></i>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
